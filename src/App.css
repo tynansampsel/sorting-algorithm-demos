@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+.sortButton {
+  background-color: #282c34;
+  color:white;
+  border: 5px solid white;
+
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  cursor:pointer
+}
+
+.sortButton:hover {
+  background-color: rgb(255, 255, 255);
+  color:#282c34;
+}
+
