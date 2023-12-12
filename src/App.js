@@ -14,7 +14,7 @@ function App() {
 
 	//https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
 	const scrambleArray = () => {
-		let newArr = Array(10000000).fill(0);
+		let newArr = Array(10000).fill(0);
 		for (let i = 0; i < newArr.length; i++) {
 			newArr[i] = i;
 		}
@@ -133,7 +133,6 @@ function App() {
 		let l = 0;
 		let r = 0;
 		while (l < newLeft.length && r < newRight.length) {
-
 			if (newLeft[l] > newRight[r]) {
 				mergedArray = [...mergedArray, newLeft[l]]
 				l++
@@ -208,6 +207,11 @@ function App() {
 					className="sortButton"
 					onClick={runMergeSort}
 				>Merge Sort</div>
+
+				<div
+					className="sortButton"
+					onClick={mergeSortSlow}
+				>My Merge Sort</div>
 			</header>
 		</div>
 	);
